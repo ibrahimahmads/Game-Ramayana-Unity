@@ -25,4 +25,15 @@ public class GameManager : MonoBehaviour
     {
         SceneManager.LoadScene("MainMenu");
     }
+
+    public void PlayGame()
+    {
+        Time.timeScale = 1f;
+        SceneManager.LoadScene("MapChapter");
+    }
+
+    public void ExitGame()
+    {
+        Application.Quit();
+    }
 }
